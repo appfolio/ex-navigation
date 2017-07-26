@@ -2,6 +2,7 @@
  * @flow
  */
 
+import PropTypes from 'prop-types';
 import React, { Children } from 'react';
 import { StyleSheet, View } from 'react-native';
 import DrawerLayout from 'react-native-drawer-layout-polyfill';
@@ -97,12 +98,12 @@ class ExNavigationDrawer extends PureComponent<any, Props, State> {
   };
 
   static contextTypes = {
-    parentNavigatorUID: React.PropTypes.string,
+    parentNavigatorUID: PropTypes.string,
   };
 
   static childContextTypes = {
-    parentNavigatorUID: React.PropTypes.string,
-    navigator: React.PropTypes.instanceOf(ExNavigationDrawerContext),
+    parentNavigatorUID: PropTypes.string,
+    navigator: PropTypes.instanceOf(ExNavigationDrawerContext),
   };
 
   getChildContext() {

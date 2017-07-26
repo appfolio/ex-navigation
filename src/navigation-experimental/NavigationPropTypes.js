@@ -21,10 +21,9 @@ import type  {
  * type check errors at build time.
  */
 
+const PropTypes = require('prop-types');
 const {Animated} = require('react-native');
 const React = require('react');
-
-const {PropTypes} = React;
 
 /* NavigationAction */
 const action =  PropTypes.shape({
